@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cool Suites Tagaytay — Detailed property information, floor plans, amenities, and inquiry form." />
+  <title>Cool Suites — Property Detail | SMDC Tagaytay</title>
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Google Fonts — Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========================================================
+       NAVBAR
+       ======================================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" style="background-color: var(--primary) !important;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-buildings-fill me-2" style="color: var(--accent);"></i>SMDC <span>Tagaytay</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="properties.html">Properties</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="nav-link btn-cta-nav" href="contact.html">Schedule a Visit</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================
+       PROPERTY DETAIL HEADER
+       ======================================================== -->
+  <div class="property-detail-header">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb" class="mb-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house-fill me-1"></i>Home</a></li>
+          <li class="breadcrumb-item"><a href="properties.html">Properties</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Cool Suites</li>
+        </ol>
+      </nav>
+
+      <div class="row align-items-end">
+        <div class="col-lg-8">
+          <span class="badge mb-2" style="background-color: #28a745; font-size: 0.78rem;">
+            <i class="bi bi-check-circle-fill me-1"></i>Ready for Occupancy
+          </span>
+          <h1>Cool Suites Tagaytay</h1>
+          <div class="detail-meta mb-3">
+            <span><i class="bi bi-geo-alt-fill"></i> Tagaytay City, Cavite</span>
+            <span><i class="bi bi-building"></i> 12 Floors</span>
+            <span><i class="bi bi-people-fill"></i> 240 Units</span>
+            <span><i class="bi bi-rulers"></i> 24–38 sqm</span>
+          </div>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <p style="color: rgba(255,255,255,0.7); font-size: 0.8rem; margin-bottom: 4px;">Starting Price</p>
+          <p class="detail-price">₱2,800,000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       MAIN CONTENT
+       ======================================================== -->
+  <section style="padding: 50px 0 80px; background-color: var(--light-bg);">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Left Column: Details -->
+        <div class="col-lg-8">
+
+          <!-- Image Carousel -->
+          <div id="propertyCarousel" class="carousel slide mb-4 rounded overflow-hidden shadow" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#propertyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#propertyCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#propertyCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#propertyCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://placehold.co/900x500/003366/D4A843?text=Cool+Suites+Exterior" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Cool Suites Exterior" />
+              </div>
+              <div class="carousel-item">
+                <img src="https://placehold.co/900x500/1a4a6b/FFD700?text=Living+Room" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Living Room" />
+              </div>
+              <div class="carousel-item">
+                <img src="https://placehold.co/900x500/0d3349/D4A843?text=Bedroom+Interior" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Bedroom Interior" />
+              </div>
+              <div class="carousel-item">
+                <img src="https://placehold.co/900x500/002244/C9A227?text=Pool+Amenities" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Pool Amenities" />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#propertyCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#propertyCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- Property Info -->
+          <div class="bg-white rounded shadow-sm p-4 mb-4">
+            <h5 class="detail-section-title">About This Property</h5>
+            <p style="font-size: 0.93rem; color: var(--gray); line-height: 1.9;">
+              Cool Suites Tagaytay is SMDC's premier condominium development nestled in the cool highlands of Tagaytay City.
+              This thoughtfully designed residential community offers studio and one-bedroom units with modern interiors,
+              floor-to-ceiling windows, and breathtaking views of the Taal Lake and volcano.
+            </p>
+            <p style="font-size: 0.93rem; color: var(--gray); line-height: 1.9;">
+              Surrounded by lush greenery and cool mountain breeze averaging 18–24°C year-round, Cool Suites provides the
+              ideal escape from Metro Manila's hustle and bustle — just 2 hours away via Tagaytay–Nasugbu Highway.
+              Whether as a primary residence, vacation home, or investment property, Cool Suites delivers exceptional value
+              and lifestyle.
+            </p>
+
+            <!-- Property Details Table -->
+            <h5 class="detail-section-title mt-4">Property Details</h5>
+            <table class="info-table">
+              <tbody>
+                <tr><td>Project Name</td><td>Cool Suites Tagaytay</td></tr>
+                <tr><td>Developer</td><td>SM Development Corporation (SMDC)</td></tr>
+                <tr><td>Location</td><td>Tagaytay City, Cavite, Philippines</td></tr>
+                <tr><td>Unit Type</td><td>Studio, 1 Bedroom</td></tr>
+                <tr><td>Floor Area</td><td>24 sqm (Studio) — 38 sqm (1BR)</td></tr>
+                <tr><td>Number of Floors</td><td>12 Floors</td></tr>
+                <tr><td>Total Units</td><td>240 Units</td></tr>
+                <tr><td>Status</td><td><span class="badge bg-success">Ready for Occupancy</span></td></tr>
+                <tr><td>Starting Price</td><td style="color: var(--accent-dark); font-weight: 700;">₱2,800,000</td></tr>
+                <tr><td>Turnover Date</td><td>Available Now</td></tr>
+                <tr><td>Parking</td><td>Available (separate purchase)</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Floor Plan -->
+          <div class="bg-white rounded shadow-sm p-4 mb-4">
+            <h5 class="detail-section-title">Floor Plans</h5>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <p class="fw-600 mb-2" style="font-size: 0.9rem; color: var(--primary); font-weight: 600;">Studio Unit — 24 sqm</p>
+                <div class="floorplan-placeholder">
+                  <i class="bi bi-layout-wtf"></i>
+                  <span style="font-size: 0.85rem;">Studio Floor Plan</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <p class="fw-600 mb-2" style="font-size: 0.9rem; color: var(--primary); font-weight: 600;">1 Bedroom Unit — 38 sqm</p>
+                <div class="floorplan-placeholder">
+                  <i class="bi bi-layout-wtf"></i>
+                  <span style="font-size: 0.85rem;">1BR Floor Plan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Amenities List -->
+          <div class="bg-white rounded shadow-sm p-4 mb-4">
+            <h5 class="detail-section-title">Amenities</h5>
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div class="amenity-list-item"><i class="bi bi-water"></i> Swimming Pool</div>
+                <div class="amenity-list-item"><i class="bi bi-bicycle"></i> Fitness Gym</div>
+                <div class="amenity-list-item"><i class="bi bi-flower1"></i> Landscaped Gardens</div>
+                <div class="amenity-list-item"><i class="bi bi-building"></i> Function Room</div>
+                <div class="amenity-list-item"><i class="bi bi-emoji-smile-fill"></i> Children's Playground</div>
+                <div class="amenity-list-item"><i class="bi bi-heart-pulse-fill"></i> Jogging Trail</div>
+              </div>
+              <div class="col-md-6">
+                <div class="amenity-list-item"><i class="bi bi-shield-lock-fill"></i> 24/7 Security</div>
+                <div class="amenity-list-item"><i class="bi bi-car-front-fill"></i> Parking Facilities</div>
+                <div class="amenity-list-item"><i class="bi bi-wifi"></i> Wi-Fi in Common Areas</div>
+                <div class="amenity-list-item"><i class="bi bi-lightning-fill"></i> 24/7 Power Backup</div>
+                <div class="amenity-list-item"><i class="bi bi-camera-video-fill"></i> CCTV Surveillance</div>
+                <div class="amenity-list-item"><i class="bi bi-elevator"></i> High-speed Elevators</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Location/Map -->
+          <div class="bg-white rounded shadow-sm p-4 mb-4">
+            <h5 class="detail-section-title">Location</h5>
+            <div class="map-placeholder">
+              <i class="bi bi-map-fill"></i>
+              <span>Tagaytay City, Cavite, Philippines</span>
+              <small style="font-size: 0.78rem; margin-top: 4px; color: var(--gray);">~2 hours from Makati CBD via SLEX / Tagaytay–Nasugbu Highway</small>
+            </div>
+            <div class="row g-3 mt-3">
+              <div class="col-md-4">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-signpost-2-fill" style="color: var(--accent); font-size: 1.3rem;"></i>
+                  <div>
+                    <p class="mb-0 fw-600" style="font-size: 0.85rem; font-weight: 600;">Nearest Landmark</p>
+                    <p class="mb-0 text-muted" style="font-size: 0.8rem;">Tagaytay Picnic Grove (2 km)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-cart4" style="color: var(--accent); font-size: 1.3rem;"></i>
+                  <div>
+                    <p class="mb-0 fw-600" style="font-size: 0.85rem; font-weight: 600;">Nearest Mall</p>
+                    <p class="mb-0 text-muted" style="font-size: 0.8rem;">SM City Dasmariñas (20 km)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-hospital-fill" style="color: var(--accent); font-size: 1.3rem;"></i>
+                  <div>
+                    <p class="mb-0 fw-600" style="font-size: 0.85rem; font-weight: 600;">Nearest Hospital</p>
+                    <p class="mb-0 text-muted" style="font-size: 0.8rem;">De La Salle University Medical Center (15 km)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /col-lg-8 -->
+
+        <!-- Right Column: Inquiry Form -->
+        <div class="col-lg-4">
+          <div class="inquiry-form-card">
+            <h5><i class="bi bi-chat-dots-fill me-2" style="color: var(--accent);"></i>Send an Inquiry</h5>
+            <div id="formSuccess" class="alert alert-success d-none" role="alert">
+              <i class="bi bi-check-circle-fill me-2"></i>
+              Thank you! We'll get in touch with you shortly.
+            </div>
+            <form class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label class="form-label" for="inquiryName">Full Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="inquiryName" placeholder="Juan Dela Cruz" required />
+                <div class="invalid-feedback">Please provide your name.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="inquiryEmail">Email Address <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="inquiryEmail" placeholder="juan@email.com" required />
+                <div class="invalid-feedback">Please provide a valid email.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="inquiryPhone">Mobile Number <span class="text-danger">*</span></label>
+                <input type="tel" class="form-control" id="inquiryPhone" placeholder="+63 9XX XXX XXXX" required />
+                <div class="invalid-feedback">Please provide your mobile number.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="inquiryUnit">Preferred Unit Type</label>
+                <select class="form-select" id="inquiryUnit">
+                  <option value="">Select unit type</option>
+                  <option>Studio Unit (24 sqm)</option>
+                  <option>1 Bedroom Unit (38 sqm)</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="inquirySchedule">Preferred Schedule</label>
+                <input type="date" class="form-control" id="inquirySchedule" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="inquiryMessage">Message</label>
+                <textarea class="form-control" id="inquiryMessage" rows="3" placeholder="I am interested in learning more about Cool Suites..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-accent w-100 py-2">
+                <i class="bi bi-send-fill me-2"></i>Submit Inquiry
+              </button>
+            </form>
+          </div>
+        </div><!-- /col-lg-4 -->
+
+      </div><!-- /row -->
+
+      <!-- ======================================================
+           RELATED PROPERTIES
+           ====================================================== -->
+      <div class="mt-5">
+        <h4 class="section-title mb-1">Related Properties</h4>
+        <div class="section-divider left"></div>
+        <div class="row g-4 mt-2">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="property-card card h-100 border-0">
+              <div class="property-img-wrapper">
+                <img src="https://placehold.co/600x400/1a5276/D4A843?text=Leaf+Residences" alt="Leaf Residences" loading="lazy" />
+                <span class="property-badge badge-preselling">Pre-Selling</span>
+              </div>
+              <div class="card-body">
+                <h5 class="property-name">Leaf Residences</h5>
+                <p class="property-location"><i class="bi bi-geo-alt-fill"></i> Tagaytay City, Cavite</p>
+                <p class="property-price">Starting at ₱3,800,000</p>
+              </div>
+              <div class="card-footer-custom">
+                <a href="property-detail.html" class="btn btn-primary-solid btn-sm w-100">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="property-card card h-100 border-0">
+              <div class="property-img-wrapper">
+                <img src="https://placehold.co/600x400/154360/D4A843?text=Shore+3+Residences" alt="Shore 3 Residences" loading="lazy" />
+                <span class="property-badge badge-preselling">Pre-Selling</span>
+              </div>
+              <div class="card-body">
+                <h5 class="property-name">Shore 3 Residences</h5>
+                <p class="property-location"><i class="bi bi-geo-alt-fill"></i> Tagaytay City, Cavite</p>
+                <p class="property-price">Starting at ₱4,500,000</p>
+              </div>
+              <div class="card-footer-custom">
+                <a href="property-detail.html" class="btn btn-primary-solid btn-sm w-100">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="property-card card h-100 border-0">
+              <div class="property-img-wrapper">
+                <img src="https://placehold.co/600x400/0d3349/C9A227?text=Hope+Residences" alt="Hope Residences" loading="lazy" />
+                <span class="property-badge badge-rfo">RFO</span>
+              </div>
+              <div class="card-body">
+                <h5 class="property-name">Hope Residences</h5>
+                <p class="property-location"><i class="bi bi-geo-alt-fill"></i> Tagaytay City, Cavite</p>
+                <p class="property-price">Starting at ₱2,500,000</p>
+              </div>
+              <div class="card-footer-custom">
+                <a href="property-detail.html" class="btn btn-primary-solid btn-sm w-100">View Details</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <p class="footer-brand"><i class="bi bi-buildings-fill me-2" style="color: var(--accent);"></i>SMDC <span>Tagaytay</span></p>
+          <p>Your premier destination for highland condominium living in Tagaytay, Philippines.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6>Properties</h6>
+          <ul class="footer-links">
+            <li><a href="property-detail.html">Cool Suites</a></li>
+            <li><a href="property-detail.html">Leaf Residences</a></li>
+            <li><a href="property-detail.html">Shore 3 Residences</a></li>
+            <li><a href="property-detail.html">Hope Residences</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h6>Contact Us</h6>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>SMDC Sales Office, Tagaytay City, Cavite 4120</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>(046) 123-4567 | +63 917 123 4567</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>tagaytay@smdc.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p>© 2024 SMDC Tagaytay — SM Development Corporation. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p><a href="#" style="color: rgba(255,255,255,0.45);">Privacy Policy</a> &nbsp;|&nbsp; <a href="#" style="color: rgba(255,255,255,0.45);">Terms of Use</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
