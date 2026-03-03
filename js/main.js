@@ -57,7 +57,7 @@
   });
 
   /* ============================================================
-     4. PROPERTY FILTER (properties.html)
+     4. PROPERTY FILTER (cardenas_ex4page2.html)
      ============================================================ */
   const filterBtns = document.querySelectorAll('.filter-btn');
   const propertyCards = document.querySelectorAll('.property-card-wrapper');
@@ -139,7 +139,7 @@
   }
 
   /* ============================================================
-     8. COUNTER ANIMATION (about.html)
+     8. COUNTER ANIMATION (cardenas_ex4page4.html)
      ============================================================ */
   const counters = document.querySelectorAll('.counter-number');
   if (counters.length) {
@@ -177,10 +177,10 @@
   /* ============================================================
      9. ACTIVE NAV LINK based on current page
      ============================================================ */
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const currentPage = window.location.pathname.split('/').pop() || 'cardenas_mainpage.html';
   document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
     const href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+    if (href === currentPage || (currentPage === '' && href === 'cardenas_mainpage.html')) {
       link.classList.add('active');
     }
   });
