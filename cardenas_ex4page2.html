@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse all SMDC Tagaytay condominium properties. Filter by unit type, price range, and availability status." />
+  <title>Properties | SMDC Tagaytay</title>
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Google Fonts — Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========================================================
+       NAVBAR
+       ======================================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" style="background-color: var(--primary) !important;">
+    <div class="container">
+      <a class="navbar-brand" href="cardenas_mainpage.html">
+        <i class="bi bi-buildings-fill me-2" style="color: var(--accent);"></i>SMDC <span>Tagaytay</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="cardenas_mainpage.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="cardenas_ex4page2.html">Properties</a></li>
+          <li class="nav-item"><a class="nav-link" href="cardenas_ex4page4.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="cardenas_ex4page5.html">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="nav-link btn-cta-nav" href="cardenas_ex4page5.html">Schedule a Visit</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================
+       BREADCRUMB HEADER
+       ======================================================== -->
+  <div class="breadcrumb-section">
+    <div class="container">
+      <h1>All Properties</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="cardenas_mainpage.html"><i class="bi bi-house-fill me-1"></i>Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Properties</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       PROPERTIES LISTING
+       ======================================================== -->
+  <section style="padding: 50px 0 80px;">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <div>
+          <span class="fw-600 me-3" style="font-size: 0.9rem; font-weight: 600; color: var(--primary);">Filter By:</span>
+          <!-- Unit Type -->
+          <button class="filter-btn active" data-filter="all">All Units</button>
+          <button class="filter-btn" data-filter="studio">Studio</button>
+          <button class="filter-btn" data-filter="1br">1 Bedroom</button>
+          <button class="filter-btn" data-filter="2br">2 Bedroom</button>
+          <!-- Status -->
+          <button class="filter-btn" data-filter="rfo">Ready for Occupancy</button>
+          <button class="filter-btn" data-filter="preselling">Pre-selling</button>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <label for="sortSelect" class="fw-600 text-nowrap" style="font-size: 0.85rem; color: var(--primary); font-weight: 600;">Sort:</label>
+          <select class="form-select form-select-sm" id="sortSelect" style="width: auto; min-width: 150px;">
+            <option value="default">Default</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="newest">Newest</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Results Count -->
+      <p class="text-muted mb-4" style="font-size: 0.875rem;">Showing <strong>8</strong> properties in Tagaytay</p>
+
+      <!-- Property Grid -->
+      <div class="row g-4" id="propertiesGrid">
+
+        <!-- 1. Cool Suites Studio -->
+        <div class="col-lg-4 col-md-6 property-card-wrapper" data-tags="studio,rfo,cool-suites">
+          <div class="property-card card h-100 border-0">
+            <div class="property-img-wrapper">
+              <img src="https://placehold.co/600x400/003366/D4A843?text=Cool+Suites+Studio" alt="Cool Suites Studio Unit" loading="lazy" />
+              <span class="property-badge badge-rfo">RFO</span>
+            </div>
+            <div class="card-body">
+              <h5 class="property-name">Cool Suites — Studio Unit</h5>
+              <p class="property-location"><i class="bi bi-geo-alt-fill"></i> Tagaytay City, Cavite</p>
+              <p class="property-price">Starting at ₱2,500,000</p>
+              <div class="property-features">
+                <span><i class="bi bi-door-open"></i> Studio</span>
+                <span><i class="bi bi-rulers"></i> 24 sqm</span>
+                <span><i class="bi bi-water"></i> Pool View</span>
+              </div>
+            </div>
+            <div class="card-footer-custom d-flex gap-2">
+              <a href="cardenas_ex4page3.html" class="btn btn-primary-solid btn-sm flex-grow-1">View Details</a>
+              <a href="cardenas_ex4page5.html" class="btn btn-outline-secondary btn-sm flex-grow-1">Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Cool Suites 1BR -->
+        <div class="col-lg-4 col-md-6 property-card-wrapper" data-tags="1br,rfo,cool-suites">
+          <div class="property-card card h-100 border-0">
+            <div class="property-img-wrapper">
+              <img src="https://placehold.co/600x400/003366/FFD700?text=Cool+Suites+1BR" alt="Cool Suites 1 Bedroom" loading="lazy" />
+              <span class="property-badge badge-rfo">RFO</span>
+            </div>
+            <div class="card-body">
+              <h5 class="property-name">Cool Suites — 1 Bedroom</h5>
+              <p class="property-location"><i class="bi bi-geo-alt-fill"></i> Tagaytay City, Cavite</p>
+              <p class="property-price">Starting at ₱3,200,000</p>
+              <div class="property-features">
+                <span><i class="bi bi-door-open"></i> 1 Bedroom</span>
+                <span><i class="bi bi-rulers"></i> 38 sqm</span>
+                <span><i class="bi bi-water"></i> City View</span>
+              </div>
+            </div>
+            <div class="card-footer-custom d-flex gap-2">
+              <a href="cardenas_ex4page3.html" class="btn btn-primary-solid btn-sm flex-grow-1">View Details</a>
+              <a href="cardenas_ex4page5.html" class="btn btn-outline-secondary btn-sm flex-grow-1">Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Leaf Residences 1BR -->
+        <div class="col-lg-4 col-md-6 property-card-wrapper" data-tags="1br,preselling,leaf">
+          <div class="property-card card h-100 border-0">
+            <div class="property-img-wrapper">
+              <img src="https://placehold.co/600x400/1a5276/D4A843?text=Leaf+Residences+1BR" alt="Leaf Residences 1 Bedroom" loading="lazy" />
+              <span class="property-badge badge-preselling">Pre-Selling</span>
+            </div>
+            <div class="card-body">
+              <h5 class="property-name">Leaf Residences — 1 Bedroom</h5>
+              <p class="property-location"><i class="bi bi-geo-alt-fill"></i> Tagaytay City, Cavite</p>
+              <p class="property-price">Starting at ₱3,800,000</p>
+              <div class="property-features">
+                <span><i class="bi bi-door-open"></i> 1 Bedroom</span>
+                <span><i class="bi bi-rulers"></i> 36 sqm</span>
+                <span><i class="bi bi-eye"></i> Garden View</span>
+              </div>
+            </div>
+            <div class="card-footer-custom d-flex gap-2">
+              <a href="cardenas_ex4page3.html" class="btn btn-primary-solid btn-sm flex-grow-1">View Details</a>
+              <a href="cardenas_ex4page5.html" class="btn btn-outline-secondary btn-sm flex-grow-1">Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Leaf Residences 2BR -->
+        <div class="col-lg-4 col-md-6 property-card-wrapper" data-tags="2br,preselling,leaf">
+          <div class="property-card card h-100 border-0">
+            <div class="property-img-wrapper">
+              <img src="https://placehold.co/600x400/1a5276/FFD700?text=Leaf+Residences+2BR" alt="Leaf Residences 2 Bedroom" loading="lazy" />
+              <span class="property-badge badge-preselling">Pre-Selling</span>
+            </div>
+            <div class="card-body">
+              <h5 class="property-name">Leaf Residences — 2 Bedroom</h5>
+              <p class="property-location"><i class="bi bi-geo-alt-fill"></i> Tagaytay City, Cavite</p>
+              <p class="property-price">Starting at ₱5,200,000</p>
+              <div class="property-features">
+                <span><i class="bi bi-door-open"></i> 2 Bedrooms</span>
+                <span><i class="bi bi-rulers"></i> 55 sqm</span>
+                <span><i class="bi bi-eye"></i> Mountain View</span>
+              </div>
+            </div>
+            <div class="card-footer-custom d-flex gap-2">
+              <a href="cardenas_ex4page3.html" class="btn btn-primary-solid btn-sm flex-grow-1">View Details</a>
+              <a href="cardenas_ex4page5.html" class="btn btn-outline-secondary btn-sm flex-grow-1">Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Shore 3 Residences 2BR -->
+        <div class="col-lg-4 col-md-6 property-card-wrapper" data-tags="2br,preselling,shore3">
+          <div class="property-card card h-100 border-0">
+            <div class="property-img-wrapper">
+              <img src="https://placehold.co/600x400/154360/D4A843?text=Shore+3+Residences+2BR" alt="Shore 3 Residences 2 Bedroom" loading="lazy" />
+              <span class="property-badge badge-preselling">Pre-Selling</span>
+            </div>
+            <div class="card-body">
+              <h5 class="property-name">Shore 3 Residences — 2 Bedroom</h5>
+              <p class="property-location"><i class="bi bi-geo-alt-fill"></i> Tagaytay City, Cavite</p>
+              <p class="property-price">Starting at ₱4,500,000</p>
+              <div class="property-features">
+                <span><i class="bi bi-door-open"></i> 2 Bedrooms</span>
+                <span><i class="bi bi-rulers"></i> 50 sqm</span>
+                <span><i class="bi bi-water"></i> Taal Lake View</span>
+              </div>
+            </div>
+            <div class="card-footer-custom d-flex gap-2">
+              <a href="cardenas_ex4page3.html" class="btn btn-primary-solid btn-sm flex-grow-1">View Details</a>
+              <a href="cardenas_ex4page5.html" class="btn btn-outline-secondary btn-sm flex-grow-1">Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Shore 3 Residences Studio -->
+        <div class="col-lg-4 col-md-6 property-card-wrapper" data-tags="studio,preselling,shore3">
+          <div class="property-card card h-100 border-0">
+            <div class="property-img-wrapper">
+              <img src="https://placehold.co/600x400/154360/FFD700?text=Shore+3+Studio" alt="Shore 3 Residences Studio" loading="lazy" />
+              <span class="property-badge badge-preselling">Pre-Selling</span>
+            </div>
+            <div class="card-body">
+              <h5 class="property-name">Shore 3 Residences — Studio</h5>
+              <p class="property-location"><i class="bi bi-geo-alt-fill"></i> Tagaytay City, Cavite</p>
+              <p class="property-price">Starting at ₱2,900,000</p>
+              <div class="property-features">
+                <span><i class="bi bi-door-open"></i> Studio</span>
+                <span><i class="bi bi-rulers"></i> 26 sqm</span>
+                <span><i class="bi bi-water"></i> Lake View</span>
+              </div>
+            </div>
+            <div class="card-footer-custom d-flex gap-2">
+              <a href="cardenas_ex4page3.html" class="btn btn-primary-solid btn-sm flex-grow-1">View Details</a>
+              <a href="cardenas_ex4page5.html" class="btn btn-outline-secondary btn-sm flex-grow-1">Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Hope Residences Studio -->
+        <div class="col-lg-4 col-md-6 property-card-wrapper" data-tags="studio,rfo,hope">
+          <div class="property-card card h-100 border-0">
+            <div class="property-img-wrapper">
+              <img src="https://placehold.co/600x400/0d3349/C9A227?text=Hope+Residences+Studio" alt="Hope Residences Studio" loading="lazy" />
+              <span class="property-badge badge-rfo">RFO</span>
+            </div>
+            <div class="card-body">
+              <h5 class="property-name">Hope Residences — Studio</h5>
+              <p class="property-location"><i class="bi bi-geo-alt-fill"></i> Tagaytay City, Cavite</p>
+              <p class="property-price">Starting at ₱2,500,000</p>
+              <div class="property-features">
+                <span><i class="bi bi-door-open"></i> Studio</span>
+                <span><i class="bi bi-rulers"></i> 22 sqm</span>
+                <span><i class="bi bi-eye"></i> City View</span>
+              </div>
+            </div>
+            <div class="card-footer-custom d-flex gap-2">
+              <a href="cardenas_ex4page3.html" class="btn btn-primary-solid btn-sm flex-grow-1">View Details</a>
+              <a href="cardenas_ex4page5.html" class="btn btn-outline-secondary btn-sm flex-grow-1">Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Hope Residences 1BR -->
+        <div class="col-lg-4 col-md-6 property-card-wrapper" data-tags="1br,rfo,hope">
+          <div class="property-card card h-100 border-0">
+            <div class="property-img-wrapper">
+              <img src="https://placehold.co/600x400/0d3349/D4A843?text=Hope+Residences+1BR" alt="Hope Residences 1 Bedroom" loading="lazy" />
+              <span class="property-badge badge-rfo">RFO</span>
+            </div>
+            <div class="card-body">
+              <h5 class="property-name">Hope Residences — 1 Bedroom</h5>
+              <p class="property-location"><i class="bi bi-geo-alt-fill"></i> Tagaytay City, Cavite</p>
+              <p class="property-price">Starting at ₱3,100,000</p>
+              <div class="property-features">
+                <span><i class="bi bi-door-open"></i> 1 Bedroom</span>
+                <span><i class="bi bi-rulers"></i> 28 sqm</span>
+                <span><i class="bi bi-flower1"></i> Garden View</span>
+              </div>
+            </div>
+            <div class="card-footer-custom d-flex gap-2">
+              <a href="cardenas_ex4page3.html" class="btn btn-primary-solid btn-sm flex-grow-1">View Details</a>
+              <a href="cardenas_ex4page5.html" class="btn btn-outline-secondary btn-sm flex-grow-1">Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+
+      <!-- Pagination -->
+      <nav aria-label="Properties pagination" class="mt-5">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       CTA BANNER
+       ======================================================== -->
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2 class="mb-3" style="color: var(--primary);">Can't Find the Right Unit?</h2>
+      <p class="mb-4" style="color: rgba(0,51,102,0.75); max-width: 500px; margin: 0 auto 1.75rem;">
+        Let our property consultants help you find the perfect SMDC Tagaytay home that fits your budget and lifestyle.
+      </p>
+      <a href="cardenas_ex4page5.html" class="btn btn-primary-solid px-5 py-3">
+        <i class="bi bi-headset me-2"></i>Talk to a Consultant
+      </a>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <p class="footer-brand"><i class="bi bi-buildings-fill me-2" style="color: var(--accent);"></i>SMDC <span>Tagaytay</span></p>
+          <p>Your premier destination for highland condominium living in Tagaytay, Philippines. Brought to you by SM Development Corporation.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="cardenas_mainpage.html">Home</a></li>
+            <li><a href="cardenas_ex4page2.html">Properties</a></li>
+            <li><a href="cardenas_ex4page4.html">About Us</a></li>
+            <li><a href="cardenas_ex4page5.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6>Properties</h6>
+          <ul class="footer-links">
+            <li><a href="cardenas_ex4page3.html">Cool Suites</a></li>
+            <li><a href="cardenas_ex4page3.html">Leaf Residences</a></li>
+            <li><a href="cardenas_ex4page3.html">Shore 3 Residences</a></li>
+            <li><a href="cardenas_ex4page3.html">Hope Residences</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h6>Contact Us</h6>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>SMDC Sales Office, Tagaytay City, Cavite 4120, Philippines</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>(046) 123-4567 | +63 917 123 4567</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>tagaytay@smdc.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p>© 2024 SMDC Tagaytay — SM Development Corporation. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p><a href="#" style="color: rgba(255,255,255,0.45);">Privacy Policy</a> &nbsp;|&nbsp; <a href="#" style="color: rgba(255,255,255,0.45);">Terms of Use</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
